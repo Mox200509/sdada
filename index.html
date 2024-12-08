@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Happy 30th Monthsary, my love! 💖.</strong>
+                        <p>
+                            
+                            These 30 months have shown me what true love really is,
+                            and I’m beyond excited for the many more months and years we’ll spend together.
+                            Thank you for being the best part of my life. Here’s to us, and to many more beautiful moments ahead.
+                        </p>
+                                <strong>With all my love,
+                                                Love 💕</strong>
+                    </div>
+        
+
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
